@@ -9,17 +9,18 @@ form what is called a “degenerate” triangle.)
 either “Yes” or “No,” depending on whether you can or cannot form a triangle from sticks
 with the given lengths.
 2. Write a function that prompts the user to input three stick lengths, converts them to integers,
-and uses is_triangle to check whether sticks with the given lengths can form a triangle.'''
+and uses is_triangle to check whether sticks with the given lengths can form a triangle.
+'''
 
 
 
 
-def is_triangle(a, b, c):
+def triangle(a, b, c):
        if a<=b+c and b<=a+c and c<=a+b:
-           return 'yes'
+           return 'Yes'
        else:
-           return 'no'
+           return 'No'
 
-is_triangle(2,12,3)
+triangle(2,12,3)
 
 
